@@ -1,0 +1,106 @@
+.container {
+  font-family: "arial,sanserif";
+  border: 1px solid #020202;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  top: 200px;
+  left: 325px;
+  right: 400px;
+  padding: 15px;
+  border-radius: 3px;
+  background-image: url(https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+footer {
+  margin-right: 5px;
+  line-height: 2;
+  padding-top: 20px;
+}
+h1 {
+  color: #141313;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 20px;
+  margin-top: 25px;
+  text-align: left;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-size: 20px;
+  font-weight: 100;
+  opacity: 1px;
+  color: #302d2d;
+  list-style: none;
+  height: 19px;
+  line-height: 35px;
+}
+footer .days {
+  text-align: center;
+  margin-top: 50px;
+}
+form {
+  margin-top: 30px;
+}
+
+form .change-city {
+  border-radius: 4px;
+  border-color: #131415;
+  padding: 8px 50px 10px 10px;
+  font-size: 16px;
+}
+present-weather {
+  font-size: 20px;
+}
+.col-6 li {
+  margin-top: 10px;
+  color: black;
+}
+
+.row img {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.temp {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 3px;
+  color: #131415;
+  margin-top: 30px;
+}
+.btn-primary {
+  padding: 7px 12px 7px 12px;
+  font-size: 20px;
+}
+.btn-success {
+  padding: 7px 12px 7px 12px;
+  font-size: 20px;
+}
+.col {
+  font-size: 17px;
+}
+.temp {
+  color: rgb(33, 33, 33);
+  font-size: 40px;
+  font-weight: 600;
+}
+.units {
+  position: relative;
+  top: -19px;
+}
+#celsius-link {
+  color: black;
+}
+#fahrenheit-link {
+  color: black;
+}
+#weather-emoji {
+  left: 140px;
+  font-size: 46px;
+}
