@@ -42,6 +42,9 @@ li {
   height: 19px;
   line-height: 35px;
 }
+li:first-letter{
+  text-transform:capitalize;
+}
 footer .days {
   text-align: center;
   margin-top: 50px;
