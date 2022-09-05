@@ -73,7 +73,7 @@ present-weather {
   font-weight: 600;
   line-height: 3px;
   color: #131415;
-  margin-top: 30px;
+  margin-top:0px;
 }
 .btn-primary {
   padding: 7px 12px 7px 12px;
