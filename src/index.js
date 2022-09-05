@@ -45,17 +45,33 @@ farenheitLink.addEventListener("click", changeFahrenheit);
 //currentweather
 
 function displayCurrentWeather(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector(".temp").innerHTML = Math.round(
+  
+  let cityElement=document.querySelector("#city")
+  cityElement.innerHTML = response.data.name;
+  
+  let temperatureElement=document.querySelector(".temp")
+  temperatureElement.innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
+  
+ let humidityElement= document.querySelector("#humidity")
+ humidityElement.innerHTML = response.data.main.humidity;
+  
+ let windElement= document.querySelector("#wind")
+windElement.innerHTML = Math.round(
     response.data.wind.speed
   );
 
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  let descriptionElement=document.querySelector("#description")
+  descriptionElement.innerHTML =
+    (response.data.weather[0].main);
+  
+ let iconElement= document.querySelector("#icon").document.querySelector('#icon')
+  iconElement.setAttribute(
+    'src',
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+  )
+  iconElement.setAttribute('alt', response.data.weather[0].description)
   
 }
 
@@ -63,7 +79,7 @@ function citySearch(city) {
   let apiKey = "050d010a9f000c2568ace67ee4ada4de";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayCurrentWeather);
-  axios.get(apiUrl).then(emojis);
+ 
 }
 
 //searcing city
@@ -76,23 +92,7 @@ function handleSubmit(event) {
   // h1.innerHTML = `${searchInput.value}`;
 }
 
-function emojis(response) {
-  let sky = response.data.weather[0].main;
-  let skyNow = document.querySelector("#weather-emoji");
-  if (sky === "Clear") {
-    skyNow.innerHTML = "☀️";
-  } else if (sky === "Clouds") {
-    skyNow.innerHTML = "🌤";
-  } else if (sky === "Drizzle") {
-    skyNow.innerHTML = "🌨";
-  } else if (sky === "Rain") {
-    skyNow.innerHTML = "🌧";
-  } else if (sky === "Thunderstorm") {
-    skyNow.innerHTML = "⚡️";
-  } else if (sky === "Snow") {
-    skyNow.innerHTML = "❄️";
-  }
-}
+
 
 function searchLocation(position) {
   let lat = position.coords.latitude;
