@@ -88,7 +88,7 @@ function citySearch(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#city-search").value;
-  citySearch("London");
+  citySearch(city);
 
   //let h1 = document.querySelector("h1");
   // h1.innerHTML = `${searchInput.value}`;
