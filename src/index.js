@@ -56,6 +56,7 @@ function displayCurrentWeather(response) {
 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#date).innerHtml=formatDate(response.data.dt.*1000);
 }
 
 function citySearch(city) {
