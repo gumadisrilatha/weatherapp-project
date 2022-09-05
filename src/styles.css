@@ -91,7 +91,7 @@ present-weather {
   font-weight: 600;
 }
 .units {
-  position: relative;
+  position:absolute;
   top: -19px;
 }
 #celsius-link {
@@ -100,7 +100,4 @@ present-weather {
 #fahrenheit-link {
   color: black;
 }
-#weather-emoji {
-  left: 140px;
-  font-size: 46px;
-}
+
