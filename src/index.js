@@ -66,9 +66,9 @@ windElement.innerHTML = Math.round(
   descriptionElement.innerHTML =
     (response.data.weather[0].main);
   
- let iconElement= document.querySelector("#icon").document.querySelector('#icon')
+ let iconElement= document.querySelector("#icon")
   iconElement.setAttribute(
-    'src',
+    "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
   )
   iconElement.setAttribute('alt', response.data.weather[0].description)
