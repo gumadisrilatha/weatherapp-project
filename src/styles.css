@@ -5,7 +5,7 @@
   margin: 0 auto;
   position: absolute;
   width: 800px;
-  height:500px;
+  height:502px;
   top: 200px;
   left: 325px;
   right: 400px;
@@ -104,4 +104,6 @@ present-weather {
 #fahrenheit-link {
   color: black;
 }
+
+ 
 
